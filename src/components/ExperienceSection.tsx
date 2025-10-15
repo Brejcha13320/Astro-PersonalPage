@@ -5,6 +5,7 @@ import { motion } from "framer-motion";
 import MotionWrapper from "./MotionWrapper";
 
 export default function ExperienceSection() {
+  const { description, items } = workExperience;
   return (
     <section
       id="experience"
@@ -22,17 +23,18 @@ export default function ExperienceSection() {
             >
               💼
             </motion.span>{" "}
-            Work Experience
+            Experiencia Profesional
           </h2>
         </MotionWrapper>
+        <p className="text-muted-foreground pl-4 py-10 mb-4 relative">{description}</p>
         <div className="mb-8">
-          {workExperience.map((job, index) => (
+          {items.map((job, index) => (
             <TimelineItem
               key={job.company + job.period}
               title={`👨‍💻 ${job.position} | ${job.company}`}
               subtitle={`🌍 ${job.location}`}
               date={`📅 ${job.period}`}
-              isLast={index === workExperience.length - 1}
+              isLast={index === items.length - 1}
               index={index}
             >
               <motion.div
@@ -46,7 +48,7 @@ export default function ExperienceSection() {
                   <div className="h-6 w-6 flex items-center justify-center rounded-full bg-purple-500/10 mr-2">
                     <Briefcase className="h-4 w-4 text-purple-500" />
                   </div>
-                  <h4 className="text-sm font-medium">Key Achievements</h4>
+                  <h4 className="text-sm font-medium">Responsabilidades y Logros</h4>
                 </div>
                 <ul className="list-none ml-4 space-y-2 text-sm">
                   {job.achievements.map((achievement, i) => (

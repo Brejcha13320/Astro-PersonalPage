@@ -5,6 +5,7 @@ import MotionWrapper from "./MotionWrapper";
 import { motion } from "framer-motion";
 
 export default function EducationSection() {
+  const { description, items } = education;
   return (
     <section
       id="education"
@@ -13,18 +14,20 @@ export default function EducationSection() {
       <div className="container max-w-4xl mx-auto px-6 md:px-4">
         <MotionWrapper>
           <h2 className="text-2xl font-bold mb-8 text-center md:text-left">
-            🎓 Education
+            🎓 Formación Académica
           </h2>
         </MotionWrapper>
 
+        <p className="text-muted-foreground pl-4 py-10 mb-4 relative">{description}</p>
+
         <div className="mb-8">
-          {education.map((edu, index) => (
+          {items.map((edu, index) => (
             <TimelineItem
               key={edu.institution}
               title={`🎓 ${edu.degree}`}
               subtitle={`🏛️ ${edu.institution}`}
               date={`📅 ${edu.period}`}
-              isLast={index === education.length - 1}
+              isLast={index === items.length - 1}
               index={index}
             >
               <p className="text-sm text-muted-foreground mb-3">

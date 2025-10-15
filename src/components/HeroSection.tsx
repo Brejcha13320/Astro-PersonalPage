@@ -48,7 +48,8 @@ export default function HeroSection() {
               className="text-xl text-muted-foreground mb-6"
               variants={childVariants}
             >
-              Software Engineer 👨‍💻
+              <h5>Ingeniero de Sistemas | Full Stack Developer 👨‍💻</h5>
+              <h5>Especialista en Procesos de Desarrollo de Software 🧩</h5>
             </motion.p>
 
             <motion.div
