@@ -1,6 +1,6 @@
 import { personalInfo } from "@/lib/data";
-import { Mail, Github, MapPin, Linkedin } from "lucide-react";
 import { motion } from "framer-motion";
+import { Github, Linkedin, Mail, MapPin } from "lucide-react";
 import MotionWrapper from "./MotionWrapper";
 
 export default function HeroSection() {
@@ -50,6 +50,7 @@ export default function HeroSection() {
             >
               <h5>Ingeniero de Sistemas | Full Stack Developer 👨‍💻</h5>
               <h5>Especialista en Procesos de Desarrollo de Software 🧩</h5>
+              <h5>Magister en Ingenieria de Software <em>[Cursando]</em> 💻</h5>
             </motion.p>
 
             <motion.div

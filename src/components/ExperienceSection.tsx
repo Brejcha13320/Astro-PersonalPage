@@ -1,14 +1,14 @@
 import { workExperience } from "@/lib/data";
-import TimelineItem from "./TimelineItem";
-import { Briefcase } from "lucide-react";
 import { motion } from "framer-motion";
+import { Briefcase } from "lucide-react";
 import MotionWrapper from "./MotionWrapper";
+import TimelineItem from "./TimelineItem";
 
 export default function ExperienceSection() {
   const { description, items } = workExperience;
   return (
     <section
-      id="experience"
+      id="experiencia"
       className="py-12 bg-gradient-to-b from-muted/20 to-background"
     >
       <div className="container max-w-4xl mx-auto px-6 md:px-4">

@@ -118,3 +118,30 @@
     @apply bg-background text-foreground;
   }
 }
+
+.scroller-auto {
+  scroll-behavior: smooth;
+  overflow-x: auto !important;
+  overflow-y: auto !important;
+
+  /* Firefox */
+  scrollbar-width: thin;
+  /* scrollbar-color: #9e58ff #e1ddff; */
+}
+
+/* Chrome, Edge y Safari */
+.scroller-auto::-webkit-scrollbar {
+  width: 0.6rem;
+  height: 0.6rem;
+  /* background-color: #e1ddff; */
+}
+
+.scroller-auto::-webkit-scrollbar-track {
+  border-radius: 20px;
+  /* background-color: #e1ddff; */
+}
+
+.scroller-auto::-webkit-scrollbar-thumb {
+  border-radius: 20px;
+  /* background-color: #9e58ff; */
+}

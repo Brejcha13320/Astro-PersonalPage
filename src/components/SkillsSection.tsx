@@ -1,4 +1,3 @@
-import React from "react";
 import { skills } from "@/lib/data";
 import { motion } from "framer-motion";
 import MotionWrapper from "./MotionWrapper";
@@ -48,13 +47,13 @@ export default function SkillsSection() {
   const { description, items } = skills;
   return (
     <section
-      id="skills"
+      id="habilidades"
       className="py-12 bg-gradient-to-b from-background to-muted/20"
     >
       <div className="container max-w-4xl mx-auto px-6 md:px-4">
         <MotionWrapper>
           <h2 className="text-2xl font-bold mb-8 text-center md:text-left">
-            🛠️ Skills
+            🛠️ Habilidades
           </h2>
         </MotionWrapper>
 
@@ -113,6 +112,19 @@ export default function SkillsSection() {
               </h3>
               <div className="flex flex-wrap gap-2 justify-center md:justify-start">
                 {items.databaseAndStorage.map((skill, index) => (
+                  <SkillTag key={skill} skill={skill} index={index} />
+                ))}
+              </div>
+            </GlassCard>
+          </motion.div>
+
+          <motion.div variants={skillCategoryVariants}>
+            <GlassCard className="p-4">
+              <h3 className="text-lg font-medium mb-3 text-center md:text-left flex items-center">
+                <span className="mr-2 text-xl">🔄</span> QA & Automation
+              </h3>
+              <div className="flex flex-wrap gap-2 justify-center md:justify-start">
+                {items.qa.map((skill, index) => (
                   <SkillTag key={skill} skill={skill} index={index} />
                 ))}
               </div>
