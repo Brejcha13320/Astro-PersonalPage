@@ -35,9 +35,8 @@ export default function CarrerSection(){
                     <h2 className="text-2xl font-bold mb-8 text-center md:text-left flex items-center md:inline-block">
                         📜 Certificaciones
                     </h2>
+                    <p className="text-muted-foreground pl-4 py-10 mb-4 relative">{description}</p>
                 </MotionWrapper>
-
-                <p className="text-muted-foreground pl-4 py-10 mb-4 relative">{description}</p>
 
                 <motion.div
                     className="space-y-6"

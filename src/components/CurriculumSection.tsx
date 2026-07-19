@@ -10,26 +10,25 @@ export default function CurriculumSection() {
                     <h2 className="text-2xl font-bold mb-8 text-center md:text-left">
                     📄 Mi Currículum
                     </h2>
+                    <p className="text-muted-foreground pl-4 py-4 relative">{description}</p>
                 </MotionWrapper>
 
-                <p className="text-muted-foreground pl-4 py-4 relative">{description}</p>
-
-                <a
-                    href={curriculumSpanish}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="py-3 px-4 inline-flex items-center gap-x-2 rounded-s-lg text-sm font-medium border border-gray-200 bg-white text-gray-800 shadow-sm hover:bg-gray-50 dark:bg-neutral-900 dark:border-neutral-700 dark:text-white dark:hover:bg-neutral-800">
-                    Hoja de Vida - Español
-                </a>
-
-                <a
-                    href={curriculumEnglish}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="py-3 px-4 inline-flex items-center gap-x-2 rounded-e-lg text-sm font-medium border border-gray-200 bg-white text-gray-800 shadow-sm hover:bg-gray-50 dark:bg-neutral-900 dark:border-neutral-700 dark:text-white dark:hover:bg-neutral-800">
-                    Hoja de Vida - Inglés
-                </a>
-                
+                <MotionWrapper>
+                    <a
+                        href={curriculumSpanish}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="py-3 px-4 inline-flex items-center gap-x-2 rounded-s-lg text-sm font-medium border border-gray-200 bg-white text-gray-800 shadow-sm hover:bg-gray-50 dark:bg-neutral-900 dark:border-neutral-700 dark:text-white dark:hover:bg-neutral-800">
+                        Hoja de Vida - Español
+                    </a>
+                    <a
+                        href={curriculumEnglish}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="py-3 px-4 inline-flex items-center gap-x-2 rounded-e-lg text-sm font-medium border border-gray-200 bg-white text-gray-800 shadow-sm hover:bg-gray-50 dark:bg-neutral-900 dark:border-neutral-700 dark:text-white dark:hover:bg-neutral-800">
+                        Hoja de Vida - Inglés
+                    </a>
+                </MotionWrapper>
             </div>
         </section>
     );

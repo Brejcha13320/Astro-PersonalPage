@@ -7,26 +7,15 @@ import TimelineItem from "./TimelineItem";
 export default function ExperienceSection() {
   const { description, items } = workExperience;
   return (
-    <section
-      id="experiencia"
-      className="py-12 bg-gradient-to-b from-muted/20 to-background"
-    >
+    <section id="experiencia" className="py-12 bg-gradient-to-b from-muted/20 to-background">
       <div className="container max-w-4xl mx-auto px-6 md:px-4">
         <MotionWrapper>
           <h2 className="text-2xl font-bold mb-8 text-center md:text-left flex items-center md:inline-block">
-            <motion.span
-              className="inline-block mr-2"
-              initial={{ rotate: 0 }}
-              whileInView={{ rotate: [0, -10, 10, -5, 5, 0] }}
-              transition={{ duration: 0.5, delay: 0.2 }}
-              viewport={{ once: true }}
-            >
-              💼
-            </motion.span>{" "}
-            Experiencia Profesional
+              💼 Experiencia Profesional
           </h2>
+          <p className="text-muted-foreground pl-4 py-10 mb-4 relative">{description}</p>
         </MotionWrapper>
-        <p className="text-muted-foreground pl-4 py-10 mb-4 relative">{description}</p>
+        
         <div className="mb-8">
           {items.map((job, index) => (
             <TimelineItem
