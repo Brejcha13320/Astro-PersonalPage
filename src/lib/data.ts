@@ -4,7 +4,7 @@ export const personalInfo = {
   email: "davidmejia-2000@outlook.com",
   github: "https://github.com/Brejcha13320",
   linkedin: "https://www.linkedin.com/in/jes%C3%BAs-david-mej%C3%ADa-vergara-4586a7230/",
-  profilePicture: "/profile.jpeg",
+  profilePicture: "/images/profile.jpg",
   heroDescription: "Soy Ingeniero en Sistemas, Especialista en Procesos de Desarrollo de Software y Estudiante de Maestria en Ingenieria de Software, tengo 26 años y soy un apasionado del desarrollo web. Me motiva crear soluciones tecnológicas que generen impacto y aporten valor, comprometiéndome al máximo en cada proyecto. Disfruto trabajar en equipo, compartir conocimientos y aprender de las experiencias de los demás. A lo largo de mi trayectoria profesional he colaborado en proyectos desafiantes con equipos altamente capacitados, lo que me ha permitido fortalecer mis habilidades en Frontend, Backend y Arquitectura de Software, para desarrollar una visión integral del proceso de construcción de software.",
 };
 
@@ -56,17 +56,17 @@ export const carrer = {
   },
   info: [
     {
-      icon: "/svg/dev.svg",
+      icon: "/images/dev.svg",
       count: "100+",
       title: "Proyectos Desarrollados",
     },
     {
-      icon: "/svg/companies.svg",
+      icon: "/images/companies.svg",
       count: "10+",
       title: "Empresas Colaboradoras",
     },
     {
-      icon: "/svg/exp-years.svg",
+      icon: "/images/exp-years.svg",
       count: "7+",
       title: "Años de Experiencia",
     }

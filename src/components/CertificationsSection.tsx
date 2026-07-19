@@ -17,10 +17,10 @@ function companyUrl(company: string){
     let urlCompany = '';
     switch (lowerCompany) {
       case 'udemy':
-        urlCompany = "/png/udemy.png";
+        urlCompany = "/images/udemy.png";
         break;
       case 'platzi':
-        urlCompany = "/png/platzi.png";
+        urlCompany = "/images/platzi.png";
         break;
     }
     return urlCompany;
